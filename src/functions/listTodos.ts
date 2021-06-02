@@ -14,8 +14,6 @@ export const handle: APIGatewayProxyHandler = async (event) => {
     })
     .promise();
 
-  console.log(response);
-
   return {
     statusCode: 200,
     body: JSON.stringify(response.Items),
